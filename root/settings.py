@@ -25,7 +25,7 @@ SECRET_KEY = 'a4b+h6lj1m*k(g*9pe0*l+nc)z9b=4_9(ff9i4g*i_uh@*l8f6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['carental.herokuapp.com']
 
 
 # Application definition
@@ -118,3 +118,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
